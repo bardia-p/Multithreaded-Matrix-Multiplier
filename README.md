@@ -36,23 +36,95 @@ double M_MATRIX[4][4] = {{20,20,50,40},{10,6,70,8},{40,3,2,10},{8,7,6,5}};
 double N_MATRIX[4][4] = {{10,30,50,70},{1,3,6,8},{9,5,5,7}, {8,6,4,2}};
 ```
 3. Now the program is ready to run after this
-<p align="center">
-<img src="images/testcase1.JPG" />
-</p>
-This is the mandatory testcase was provided in the assignment description and the result that is shown is the correct output.
+```
+Matrix multiplier program starting
+Multiplying matrix M:
+[     20.00      20.00      50.00      40.00 ]
+[     10.00       6.00      70.00       8.00 ]
+[     40.00       3.00       2.00      10.00 ]
+[      8.00       7.00       6.00       5.00 ]
+with matrix N:
+[     10.00      30.00      50.00      70.00 ]
+[      1.00       3.00       6.00       8.00 ]
+[      9.00       5.00       5.00       7.00 ]
+[      8.00       6.00       4.00       2.00 ]
+Child Process: working with row 1
+Child Process: working with row 2
+The largest number in row 1 of matrix Q is 1990.00
+The largest number in row 2 of matrix Q is 1254.00
+Child Process: working with row 3
+Child Process: working with row 4
+The largest number in row 3 of matrix Q is 2858.00
+The largest number in row 4 of matrix Q is 668.00
+Final Result
+[    990.00    1150.00    1530.00    1990.00 ]
+[    800.00     716.00     918.00    1254.00 ]
+[    501.00    1279.00    2068.00    2858.00 ]
+[    181.00     321.00     492.00     668.00 ]
+The largest number in the matrix is 2858.00
+The time it took to run the program in micro sec 695
+```
+This a sample test case
 
 ## Testing multiplication with the identity matrix:
-In this testcase the original matrix is multiplied with the identity matrix which would produce the original matrix as a the output
-<p align="center">
-<img src="images/testcase2.JPG" />
-</p>
+```
+Matrix multiplier program starting
+Multiplying matrix M:
+[     20.00      20.00      50.00      40.00 ]
+[     10.00       6.00      70.00       8.00 ]
+[     40.00       3.00       2.00      10.00 ]
+[      8.00       7.00       6.00       5.00 ]
+with matrix N:
+[     1.00        0.00       0.00       0.00 ]
+[     0.00        1.00       0.00       0.00 ]
+[     0.00        0.00       1.00       0.00 ]
+[     0.00        0.00       0.00       1.00 ]
+Child Process: working with row 1
+Child Process: working with row 2
+The largest number in row 1 of matrix Q is 50.00
+The largest number in row 2 of matrix Q is 70.00
+Child Process: working with row 3
+The largest number in row 3 of matrix Q is 40.00
+Child Process: working with row 4
+The largest number in row 4 of matrix Q is 8.00
+Final Result
+[     20.00      20.00      50.00      40.00 ]
+[     10.00       6.00      70.00       8.00 ]
+[     40.00       3.00       2.00      10.00 ]
+[      8.00       7.00       6.00       5.00 ]
+The largest number in the matrix is 70.00
+The time it took to run the program in micro sec 390
+```
 
 ## Testing multiplication with the inverse matrix:
-In this testcase the matrix is multiplied by its inverse which should produce the identity matrix. 
-<p align="center">
-<img src="images/testcase3.JPG" />
-</p>
-
+```
+Matrix multiplier program starting
+Multiplying matrix M:
+[     20.00      20.00      50.00      40.00 ]
+[     10.00       6.00      70.00       8.00 ]
+[     40.00       3.00       2.00      10.00 ]
+[      8.00       7.00       6.00       5.00 ]
+with matrix N:
+[     -0.01       0.00       0.03       0.01 ]
+[     -0.02      -0.00      -0.03       0.21 ]
+[     -0.00       0.02      -0.00      -0.01 ]
+[      0.04      -0.02       0.00      -0.10 ]
+Child Process: working with row 1
+Child Process: working with row 2
+The largest number in row 1 of matrix Q is 1.00
+The largest number in row 2 of matrix Q is 1.00
+Child Process: working with row 3
+The largest number in row 3 of matrix Q is 1.00
+Child Process: working with row 4
+The largest number in row 4 of matrix Q is 1.00
+Final Result
+[     1.00       0.00       0.00       0.00 ]
+[     0.00       1.00       0.00      -0.00 ]
+[     0.00       0.00       1.00      -0.00 ]
+[     0.00       0.00       0.00       1.00 ]
+The largest number in the matrix is 1.00
+The time it took to run the program in micro sec 382
+```
 ## CREDITS
 Author: Bardia Parmoun
 
